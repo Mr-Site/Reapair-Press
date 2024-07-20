@@ -290,7 +290,7 @@ header > .top > .container > .topMenu > #extrasSubmenu > li > a {
 /* social icons */
 
 .socialIcons {
-  width: 15%;
+  width: 17%;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -298,7 +298,9 @@ header > .top > .container > .topMenu > #extrasSubmenu > li > a {
 }
 
 .socialIcons a {
-  margin: 0 5px;
+  display: inline-block;
+  width: calc(25% - 40px);
+  margin: 0 20px;
 }
 
 .socialIcons .fa {
@@ -706,7 +708,7 @@ main {
 }
 #s6 .container .top .betweenLine {
   padding: 0 15px;
-  width: 60%;
+  width: 50%;
   border-bottom: 1px solid #adadad;
 }
 
@@ -770,7 +772,7 @@ main {
 #s7 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 /* s7 left */
@@ -831,14 +833,81 @@ main {
 }
 
 #s7 .container .right .top .titre {
-  padding: 15px;
   font-size: 2.5rem;
   color: #525252;
 }
 #s7 .container .right .top .betweenLine {
   padding: 0 15px;
-  width: 80%;
+  width: 70%;
   border-bottom: 1px solid #adadad;
+}
+
+#s7 .container .right .menuList {
+  height: 100%;
+  overflow-x: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#s7 .container .right .menuList .accordion {
+  width: 100%;
+  color: #525252;
+  cursor: pointer;
+  padding: 20px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 0.8rem;
+  font-weight: 800;
+  background-color: transparent;
+}
+
+#s7 .container .right .menuList .active,
+#s7 .container .right .menuList .accordion:hover {
+  color: #7aa93c;
+  background-color: #e4e0e0;
+}
+
+#s7 .container .right .menuList .active::after,
+#s7 .container .right .menuList .accordion:hover:after {
+  color: #7aa93c;
+}
+
+#s7 .container .right .menuList .readMore:active,
+#s7 .container .right .menuList .readMore:hover {
+  color: #55762a;
+}
+
+#s7 .container .right .menuList .accordion:after {
+  content: "\002B";
+  padding: 0 15px;
+  color: #525252;
+  font-weight: bold;
+  float: left;
+}
+
+#s7 .container .right .menuList .active:after {
+  content: "\2212";
+}
+
+#s7 .container .right .menuList .panel {
+  padding: 0 60px;
+  text-align: justify;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #868484;
+  max-height: 0;
+  overflow: hidden;
+}
+
+#s7 .container .right .menuList .readMore {
+  display: block;
+  width: 100%;
+  padding: 20px 60px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-align: left;
+  color: #6f9b36;
 }
 
 /* responsive */ /* responsive */ /* responsive */ /* responsive */ /* responsive */ /* responsive */
