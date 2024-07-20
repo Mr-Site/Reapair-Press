@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReapairPress</title>
+
+    <!-- swiper link -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Css link-->
+
+    <link rel="stylesheet" href="CSS/Style.css" />
+  </head>
+  <body id="body">
+    <!-- prev Header -->
+    <div id="prevHeader">
+      <a href="#" id="evanoMarket"
+        ><img
+          src="MEDIA/LOGO/envato_market-dde916a48af7413e54aa058fe7ae6856752fca799da4bec355f00aea904bfa19.svg"
+          alt="evano market"
+      /></a>
+
+      <a href="#" id="buyNow">Buy now</a>
+    </div>
+
+    <!-- header -->
+
+    <header>
+      <div class="top">
+        <div class="container">
+          <div class="topTagline">
+            The ideal WordPress theme for repair businesses
+          </div>
+
+          <nav class="topMenu">
+            <a
+              href="#"
+              onmouseover="showExtrasSubmenu()"
+              onmouseleave="removeExtrasSubmenu()"
+            >
+              Extras
+            </a>
+
+            <ul
+              id="extrasSubmenu"
+              onmouseleave="removeExtrasSubmenu()"
+              onmouseover="showExtrasSubmenu()"
+            >
+              <li><a href="#"> Discover All Features </a></li>
+              <li><a href="#"> Tables </a></li>
+              <li><a href="#"> FAQ </a></li>
+            </ul>
+
+            <a href="#"> Buy Now </a>
+
+            <a href="#"> Theme Documention </a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="headerContainer">
+        <div class="container">
+          <a href="#" class="headerLogo">
+            <img src="MEDIA/LOGO/logo.png" alt="REAPAIRPRESS" />
+          </a>
+
+          <div class="headerWidget">
+            <div class="widget">
+              <i class="fa-solid fa-phone fa" style="color: #91bd52"></i>
+              <h4>Live Help</h4>
+              <span>1-888-123-45678</span>
+            </div>
+
+            <div class="widget">
+              <i class="fa-regular fa-clock fa" style="color: #91bd52"></i>
+              <h4>Opening Time</h4>
+              <span>08.00 - 18.00</span>
+            </div>
+
+            <div class="widget">
+              <i class="fa-solid fa-comments fa" style="color: #91bd52"></i>
+              <h4>Email Us</h4>
+              <span>info[at]repairpress.com</span>
+            </div>
+          </div>
+          <a href="#" class="widgetBtn">BUY THEME</a>
+        </div>
+      </div>
+
+      <!-- header Nav -->
+
+      <nav class="headerNav">
+        <div class="navContainer">
+          <!-- nav menu -->
+          <div class="navBar">
+            <a href="#">
+              <i class="fa-solid fa-house fa" style="color: #6f9b36"></i>
+            </a>
+
+            <a
+              href="#"
+              class="item1"
+              id="item1"
+              onmouseover="showServicesSubmenu()"
+              onmouseleave="removeServicesSubmenu()"
+            >
+              OUR SERVICES
+              <i
+                class="fa-solid fa-caret-down fa"
+                style="margin-left: 5px"
+                id="fa-caret-down"
+              ></i>
+            </a>
+
+            <ul
+              id="servicesSubmenu"
+              onmouseover="showServicesSubmenu()"
+              onmouseleave="removeServicesSubmenu()"
+            >
+              <li><a href="#"> Mac & PC Repair </a></li>
+              <li><a href="#"> Broken Glass Repair </a></li>
+              <li><a href="#"> Tablet Repair </a></li>
+              <li><a href="#"> Game Consoles Repair </a></li>
+              <li><a href="#"> Phone Unloking </a></li>
+              <li><a href="#"> Water Damage Repair </a></li>
+            </ul>
+
+            <a href="#" class="items"> ABOUT US </a>
+
+            <a href="#" class="items"> LASTEST NEWS </a>
+
+            <a href="#" class="items"> SHOP </a>
+
+            <a href="#" class="items"> CONTACT US </a>
+          </div>
+
+          <!-- social icons -->
+          <div class="socialIcons">
+            <a href="#">
+              <i class="fa-brands fa-meta fa" style="color: #ffffff"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-x-twitter fa" style="color: #ffffff"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-youtube fa" style="color: #ffffff"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-solid fa-wifi fa" style="color: #ffffff"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+
+    <main>
+      <!-- s1 -->
+
+      <div id="s1">
+        <div
+          class="slideshow-container"
+          onmouseover="stopSlide()"
+          onmouseleave="resumeSlide()"
+        >
+          <div class="mySlides fade num1">
+            <div class="container">
+              <h1>Support and repair with lowest costs</h1>
+
+              <p>
+                Are you looking for phone or any other device repair? We carry
+                out large number of mobile repairs every month and help you fix
+                your device as well.
+              </p>
+
+              <div class="btn">
+                <a href="#" class="buyTheme">BUY THEME</a>
+                <a href="#" class="buyTheme getInTouch">GET IN TOUCH</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade num2">
+            <div class="container">
+              <h1>Advanced technologies handed to us</h1>
+
+              <p>
+                Our aim is to offer outstanding services straight to your home
+                or to your office to conduct repair works or troubleshoot your
+                computer.
+              </p>
+
+              <a href="#" class="buyTheme">BUY THEME</a>
+            </div>
+          </div>
+
+          <div class="mySlides fade num3">
+            <div class="container">
+              <h1>Finding solutions for your problems</h1>
+
+              <p>
+                For us, the repair work is not just about finding the fault and
+                fixing it, it is about quality parts that are made to last long.
+                We make sure that each of the parts used for repairing are brand
+                new and of the highest quality.
+              </p>
+
+              <a href="#" class="buyTheme">BUY THEME</a>
+            </div>
+          </div>
+
+          <div class="mySlides fade num4">
+            <div class="container">
+              <h1>Best advanced repair provided by us</h1>
+
+              <p>
+                Our company cares for people and their tech devices. This is the
+                reason out customers comes before anything else. Our aim to fix
+                the iPhone screen and the computer that won’t start.
+              </p>
+
+              <a href="#" class="buyTheme">BUY THEME</a>
+            </div>
+          </div>
+
+          <div class="mySlides fade num5">
+            <div class="container">
+              <h1>Experts of recovering lost data - fast and cheap</h1>
+
+              <p>
+                To know more about our services and talk to our expert about
+                what’s wrong with your device, you can reach us through email or
+                give us a call for quick assistance
+              </p>
+
+              <a href="#" class="buyTheme">BUY THEME</a>
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+
+      <!-- s2 -->
+
+      <div id="s2">
+        <div class="container">
+          <div class="items">
+            <div class="left">
+              <h3>NO FIX, NO FEE</h3>
+              <span>Repair on Demand</span>
+            </div>
+
+            <div class="right">
+              <i
+                class="fa-regular fa-money-bill-1 fa"
+                style="color: #6f9b36"
+              ></i>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="left">
+              <h3>30 DAYS WARRANTY</h3>
+              <span>Guaranteed Service</span>
+            </div>
+
+            <div class="right">
+              <i class="fa-solid fa-calendar-day fa" style="color: #6f9b36"></i>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="left">
+              <h3>EXPERT STAFF</h3>
+              <span>Available Anytime</span>
+            </div>
+
+            <div class="right">
+              <i class="fa-solid fa-users fa" style="color: #6f9b36"></i>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="left">
+              <h3>WE ARE FAST</h3>
+              <span>Qualified Workers</span>
+            </div>
+
+            <div class="right">
+              <i class="fa-solid fa-gauge-high fa" style="color: #6f9b36"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- s3 -->
+      <div id="s3">
+        <div class="container">
+          <div class="items">
+            <a href="#" class="headImage"
+              ><img
+                src="MEDIA/IMAGE/s3-1.jpg"
+                alt="mobile repair"
+                style="width: 100%"
+            /></a>
+
+            <div class="content">
+              <h2>
+                <a href="#" class="titre">BROKEN GLASS REPAIR</a>
+              </h2>
+
+              <p class="text">
+                Mobiles phone have become an inseparable part of our lives. We
+                can now surf the web, log onto our social networking websites or
+                just carry out leisure activities for hours on your...
+              </p>
+
+              <a href="#" class="readMore"
+                >READ MORE
+                <i class="fa-solid fa-caret-right fa" style="color: #6f9b36"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="items">
+            <a href="#" class="headImage"
+              ><img
+                src="MEDIA/IMAGE/s3-2.jpg"
+                alt="mobile repair"
+                style="width: 100%"
+            /></a>
+
+            <div class="content">
+              <h2>
+                <a href="#" class="titre">GAME CONSOLE REPAIR</a>
+              </h2>
+
+              <p class="text">
+                Most of us are stressed and tired with all the professional and
+                personal commitments that at the end of the day, we want to just
+                relax and head to a fantasy world where you are the one...
+              </p>
+
+              <a href="#" class="readMore"
+                >READ MORE
+                <i class="fa-solid fa-caret-right fa" style="color: #6f9b36"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="items">
+            <a href="#" class="headImage"
+              ><img
+                src="MEDIA/IMAGE/s3-3.jpg"
+                alt="mobile repair"
+                style="width: 100%"
+            /></a>
+
+            <div class="content">
+              <h2>
+                <a href="#" class="titre">MAC & PC REPAIR</a>
+              </h2>
+
+              <p class="text">
+                Whether you are a business or an individual looking to fix your
+                computer, you can trust us to take care of all your needs. We
+                understand that computers make our lives and business much...
+              </p>
+
+              <a href="#" class="readMore"
+                >READ MORE
+                <i class="fa-solid fa-caret-right fa" style="color: #6f9b36"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="items menuList">
+            <a href="#">
+              <i class="fa-solid fa-laptop fa" style="color: #868484"></i>
+              <span> LAPTOP REPAIR </span></a
+            >
+
+            <a href="#">
+              <i
+                class="fa-solid fa-mobile-screen-button fa"
+                style="color: #868484"
+              ></i>
+              <span>TABLET & IPAD REPAIR </span></a
+            >
+
+            <a href="#">
+              <i class="fa-solid fa-gamepad fa" style="color: #868484"></i>
+              <span> GAME SYSTEMS REPAIR </span></a
+            >
+
+            <a href="#">
+              <i class="fa-solid fa-tv fa" style="color: #868484"></i>
+              <span> LCD TV REPAIR </span></a
+            >
+
+            <a href="#">
+              <i class="fa-solid fa-music fa" style="color: #868484"></i>
+              <span> MP3 & MP4 REPAIRS</span></a
+            >
+
+            <a href="#">
+              <i
+                class="fa-solid fa-ellipsis-vertical fa"
+                style="color: #868484"
+              ></i>
+              <span> OTHER ELECTRONICS </span></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- s4 -->
+
+      <div id="s4">
+        <h2>Easy way to get your phone repaired</h2>
+        <div class="container">
+          <div class="items">
+            <div class="content">
+              <h3 class="titre">
+                <i
+                  class="fa-solid fa-mobile-screen-button fa"
+                  style="color: #ffffff"
+                ></i>
+                BROKEN DEVICE
+              </h3>
+
+              <p class="text">
+                If your device breaks, don't panic. We offer a huge range of
+                mobile phone & tablet repair services
+              </p>
+
+              <div class="number">01.</div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="content">
+              <h3 class="titre">
+                <i class="fa-solid fa-envelope fa" style="color: #ffffff"></i>
+                SEND IT TO US
+              </h3>
+
+              <p class="text">
+                We offer free postage with all mobile phone & table repairs.
+                Saving you time and money. Just print the label and send.
+              </p>
+
+              <div class="number">02.</div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="content">
+              <h3 class="titre">
+                <i class="fa-solid fa-wrench fa" style="color: #ffffff"></i>
+                QUICK FIX
+              </h3>
+
+              <p class="text">
+                Our trained technicians will repair your mobile phone or tablet
+                device quickly & efficiently, keeping you informed all the way.
+              </p>
+
+              <div class="number">03.</div>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="content">
+              <h3 class="titre">
+                <i class="fa-solid fa-reply fa" style="color: #ffffff"></i>
+                FAST RETURN
+              </h3>
+
+              <p class="text">
+                Choose the delivery method that matches your requirements. We
+                will make sure you repaired device is returned safely.
+              </p>
+
+              <div class="number">04.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- s5 -->
+
+      <div id="s5">
+        <div class="container">
+          <div class="items">
+            <i class="fa-brands fa-android fa" style="color: #91bd52"></i>
+            <div class="content">
+              <h3 class="titre">Android Lollipop</h3>
+              <p class="text">
+                Are you looking for Android repair? We carry out large number of
+                mobile repairs every day and help you fix the device.
+              </p>
+            </div>
+          </div>
+
+          <div class="items">
+            <i class="fa-brands fa-apple fa" style="color: #91bd52"></i>
+            <div class="content">
+              <h3 class="titre">Apple iOS 8.0</h3>
+              <p class="text">
+                Using the latest diagnostic tools, we are equipped in diagnosing
+                the problem and making your tablet repair happen
+              </p>
+            </div>
+          </div>
+
+          <div class="items">
+            <i class="fa-brands fa-windows fa" style="color: #91bd52"></i>
+            <div class="content">
+              <h3 class="titre">Windows Phone 10</h3>
+              <p class="text">
+                Solving your networking problem, hardware problems or software
+                problems for your desktop PC.
+              </p>
+            </div>
+          </div>
+
+          <div class="items">
+            <i class="fa-solid fa-print fa" style="color: #91bd52"></i>
+            <div class="content">
+              <h3 class="titre">China Express</h3>
+              <p class="text">
+                This is when I though starting a repair company of my own to
+                offer personalized customer service to people.
+              </p>
+            </div>
+          </div>
+
+          <div class="items">
+            <i class="fa-camera-retro fa" style="color: #91bd52"></i>
+            <div class="content">
+              <h3 class="titre">iCamera OS</h3>
+              <p class="text">
+                Taking out the camera and then replacing it with the new one
+                should be done is exact semblance. Easy and peasy.
+              </p>
+            </div>
+          </div>
+
+          <div class="items">
+            <i class="fa-desktop fa" style="color: #91bd52"></i>
+            <div class="content">
+              <h3 class="titre">Desktop System</h3>
+              <p class="text">
+                Our aim to minimize the problem from reoccurring and offers you
+                low cost repair work that is essential for your computer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- s6 -->
+
+      <div id="s6">
+        <div class="container">
+          <div class="top">
+            <h2 class="titre">Latest News</h2>
+            <div class="betweenLine"></div>
+            <a href="#" class="moreNews">MORE NEWS</a>
+          </div>
+
+          <div class="bottom">
+            <a href="#" class="items">
+              <div class="picture">
+                <img src="MEDIA/IMAGE/s6-1.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h3 class="titre">UNLOCKING PIN PROTECTED DEVICES</h3>
+                <span class="author"> By Primož Cigler </span>
+              </div>
+            </a>
+
+            <a href="#" class="items">
+              <div class="picture">
+                <img src="MEDIA/IMAGE/s6-2.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h3 class="titre">Damaged ports and slots in laptops</h3>
+                <span class="author"> By Primož Cigler </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- s7 -->
+
+      <div id="s7">
+        <div class="container">
+          <div class="left">
+            <div class="top">
+              <h2 class="titre">About Us</h2>
+              <div class="betweenLine"></div>
+            </div>
+
+            <a href="#" class="picture">
+              <img src="MEDIA/IMAGE/s7-1.jpg" alt="" height="100%" />
+              <img src="MEDIA/IMAGE/s7-2.jpg" alt="" height="100%" />
+            </a>
+
+            <div class="text">
+              When it comes to gadgets and gizmos, we love all things tech. one
+              thing that you should not do is confuse our passion for snobbery.
+              We fix all electronic devices such as phones, tablets, PCs and
+              even your gaming consoles. Whether you accidently dropped your
+              iPhone from your pocket while boarding the bus or a train or your
+              tablet took a painful journey in the toilet, you should not worry.
+              We know exactly how it feels and can understand the traumatic
+              experience you might be going through when you see your precious
+              device being broken.
+            </div>
+
+            <a href="#" class="readMore"
+              >READ MORE
+              <i class="fa-solid fa-caret-right fa" style="color: #6f9b36"></i
+            ></a>
+          </div>
+          <div class="right">
+            <div class="top">
+              <h2 class="titre">FAQ</h2>
+              <div class="betweenLine"></div>
+            </div>
+
+            <div class="menuList">
+              <a href="#">
+                
+                <h4>HOW TO MAKE TEXT BIGGER ON THE IPHONE?</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- font awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/51e7612045.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swiper js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- main js -->
+
+    <script src="JS/main.js?t=105"></script>
+  </body>
+</html>
