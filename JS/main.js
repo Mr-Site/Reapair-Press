@@ -24,6 +24,31 @@ function removeServicesSubmenu() {
   document.getElementById("fa-caret-down").style.color = "#868484";
 }
 
+// change page
+
+function openPage(pageName, elmnt, kadr, borderBtm, paint) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.border = "";
+    tablinks[i].style.borderBottom = "";
+    tablinks[i].style.color = "#868684";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.border = kadr;
+  elmnt.style.borderBottom = borderBtm;
+  elmnt.style.color = paint;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+// home page
+
 // main slide show
 
 let slideIndex = 1;

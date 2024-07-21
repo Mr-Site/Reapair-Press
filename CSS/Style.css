@@ -31,6 +31,11 @@ a {
   font: normal normal normal 14px/1 FontAwesome;
 }
 
+.tabcontent {
+  display: none;
+  height: 100%;
+}
+
 /* prev Header */
 
 #prevHeader {
@@ -257,9 +262,8 @@ header > .top > .container > .topMenu > #extrasSubmenu > li > a {
 .navBar .fa-house {
   font-size: 18px;
   padding: 10px;
-  border: 1px solid #93c94d;
-  border-radius: 5px;
-  filter: grayscale(100%);
+  border-radius: 5px !important;
+  filter: grayscale(100%) !important;
 }
 
 /* services sub menu */
@@ -299,8 +303,8 @@ header > .top > .container > .topMenu > #extrasSubmenu > li > a {
 
 .socialIcons a {
   display: inline-block;
-  width: calc(25% - 40px);
-  margin: 0 20px;
+  width: calc(25% - 20px);
+  margin: 0 10px;
 }
 
 .socialIcons .fa {
@@ -311,12 +315,15 @@ header > .top > .container > .topMenu > #extrasSubmenu > li > a {
   filter: grayscale(100%);
 }
 
-/* main */
-
 main {
   max-width: 2500px;
   margin: auto;
 }
+
+/*  home page */ /*  home page */ /*  home page */ /*  home page */
+/*  home page */ /*  home page */ /*  home page */ /*  home page */
+/*  home page */ /*  home page */ /*  home page */ /*  home page */
+/*  home page */ /*  home page */ /*  home page */ /*  home page */
 
 /* s1 */
 
@@ -910,6 +917,40 @@ main {
   color: #6f9b36;
 }
 
+/* s8 */
+#s8 {
+  margin: auto;
+  padding: 20px 0;
+  background-color: #303030;
+}
+
+#s8 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#s8 .container .left,
+#s8 .container .right {
+  margin: 0 15px;
+}
+
+#s8 .container .left h2 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#s8 .container .left h3 {
+  color: #c2c2c2;
+}
+
+#s8 .container .right .buyTheme {
+  padding: 20px 30px;
+  border: 2px solid #868484;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
 /* responsive */ /* responsive */ /* responsive */ /* responsive */ /* responsive */ /* responsive */
 /* responsive */ /* responsive */ /* responsive */ /* responsive */ /* responsive */ /* responsive */
 /* responsive */ /* responsive */ /* responsive */ /* responsive */ /* responsive */ /* responsive */
@@ -987,13 +1028,16 @@ header > .top > .container > .topMenu > #extrasSubmenu > li > a:hover {
 
 /* header Nav */
 
-.socialIcons .fa:hover,
+.socialIcons .fa:hover {
+  filter: none !important;
+}
 .navBar .fa-house:hover {
-  filter: none;
+  filter: none !important;
+  color: #93c94d !important;
 }
 
 .navBar .items:hover {
-  color: #262626;
+  color: #262626 !important;
   border-bottom: 2px solid #262626;
 }
 
@@ -1048,4 +1092,9 @@ header > .top > .container > .topMenu > #extrasSubmenu > li > a:hover {
 #s7 .container .left .readMore:hover,
 #s7 .container .left .readMore:hover .fa {
   color: #55762a !important;
+}
+
+/* s8 */
+#s8 .container .right .buyTheme:hover {
+  border-color: #525252;
 }

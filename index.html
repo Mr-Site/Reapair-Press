@@ -99,15 +99,20 @@
           <!-- nav menu -->
           <div class="navBar">
             <a href="#">
-              <i class="fa-solid fa-house fa" style="color: #6f9b36"></i>
+              <i
+                class="fa-solid fa-house fa tablink"
+                id="defaultOpen"
+                onclick="openPage('home', this,'1px solid #93c94d' )"
+              ></i>
             </a>
 
             <a
               href="#"
-              class="item1"
+              class="item1 tablink"
               id="item1"
               onmouseover="showServicesSubmenu()"
               onmouseleave="removeServicesSubmenu()"
+              onclick="openPage('services', this,'none', '2px solid #262626',  '#262626')"
             >
               OUR SERVICES
               <i
@@ -130,13 +135,37 @@
               <li><a href="#"> Water Damage Repair </a></li>
             </ul>
 
-            <a href="#" class="items"> ABOUT US </a>
+            <a
+              href="#"
+              class="tablink items"
+              onclick="openPage('aboutUs', this,'none', '2px solid #262626',  '#262626')"
+            >
+              ABOUT US
+            </a>
 
-            <a href="#" class="items"> LASTEST NEWS </a>
+            <a
+              href="#"
+              class="tablink items"
+              onclick="openPage('news', this,'none', '2px solid #262626',  '#262626')"
+            >
+              LASTEST NEWS
+            </a>
 
-            <a href="#" class="items"> SHOP </a>
+            <a
+              href="#"
+              class="tablink items"
+              onclick="openPage('shop', this,'none', '2px solid #262626',  '#262626')"
+            >
+              SHOP
+            </a>
 
-            <a href="#" class="items"> CONTACT US </a>
+            <a
+              href="#"
+              class="tablink items"
+              onclick="openPage('contantUs', this,'none', '2px solid #262626',  '#262626')"
+            >
+              CONTACT US
+            </a>
           </div>
 
           <!-- social icons -->
@@ -161,9 +190,12 @@
       </nav>
     </header>
 
-    <!-- main -->
+    <!-- home page -->
+    <!-- home page -->
+    <!-- home page -->
+    <!-- home page -->
 
-    <main>
+    <main id="home" class="tabcontent">
       <!-- s1 -->
 
       <div id="s1">
@@ -728,6 +760,91 @@
           </div>
         </div>
       </div>
+
+      <!-- s8 -->
+
+      <div id="s8">
+        <div class="container">
+          <div class="left">
+            <h2>Do you want to sell your mobile phone?</h2>
+            <h3>
+              We can sell your cell phone device in the matter of days for just
+              10% fee
+            </h3>
+          </div>
+
+          <div class="right"><a href="#" class="buyTheme">BUY THEME</a></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- resvices page -->
+    <!-- resvices page -->
+    <!-- resvices page -->
+    <!-- resvices page -->
+
+    <main id="services" class="tabcontent">
+      <h1 style="text-align: center; margin-top: 100px">
+        (services) WE ARE WORKING ON IT RIGHT NOW...
+      </h1>
+      <h2 style="text-align: center">
+        Thank you for your patience <span style="color: red">&#10084;</span>
+      </h2>
+    </main>
+
+    <!-- about us page -->
+    <!-- about us page -->
+    <!-- about us page -->
+    <!-- about us page -->
+
+    <main id="aboutUs" class="tabcontent">
+      <h1 style="text-align: center; margin-top: 100px">
+        (about us) WE ARE WORKING ON IT RIGHT NOW...
+      </h1>
+      <h2 style="text-align: center">
+        Thank you for your patience <span style="color: red">&#10084;</span>
+      </h2>
+    </main>
+
+    <!-- lastest news page -->
+    <!-- lastest news page -->
+    <!-- lastest news page -->
+    <!-- lastest news page -->
+    <main id="news" class="tabcontent">
+      <h1 style="text-align: center; margin-top: 100px">
+        (lastest news) WE ARE WORKING ON IT RIGHT NOW...
+      </h1>
+      <h2 style="text-align: center">
+        Thank you for your patience <span style="color: red">&#10084;</span>
+      </h2>
+    </main>
+
+    <!-- shop page -->
+    <!-- shop page -->
+    <!-- shop page -->
+    <!-- shop page -->
+
+    <main id="shop" class="tabcontent">
+      <h1 style="text-align: center; margin-top: 100px">
+        (shop) WE ARE WORKING ON IT RIGHT NOW...
+      </h1>
+      <h2 style="text-align: center">
+        Thank you for your patience <span style="color: red">&#10084;</span>
+      </h2>
+    </main>
+
+    <!-- contant us -->
+    <!-- contant us -->
+    <!-- contant us -->
+    <!-- contant us -->
+
+    <main id="contantUs" class="tabcontent">
+      <h1 style="text-align: center; margin-top: 100px">
+        (contant us) WE ARE WORKING ON IT RIGHT NOW...
+      </h1>
+      <h2 style="text-align: center">
+        Thank you for your patience <span style="color: red">&#10084;</span>
+      </h2>
     </main>
 
     <!-- font awesome -->
